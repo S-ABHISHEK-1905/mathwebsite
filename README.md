@@ -103,7 +103,7 @@ h1{
                     <input type="button" value="CALCULATE" id="calbutton"/>
                 </div><br>
                 <div class=formelement>
-                    <lable for="cedit">Volume:</lable>
+                    <lable for="cedit">VOLUME:</lable>
                     <input type="text" id="cedit" value="0"/>
                     <lable>metre^3</lable>
                 </div><br>
@@ -145,9 +145,9 @@ h1{
                   <input type="button" value="CALCULATE" id="calbutton2"/>
                 </div><br>
                 <div class="formelement">
-                  <lable for="volumeedit">VOLUME:</lable>
+                  <lable for="volumeedit">AREA:</lable>
                   <input type="text" id="volumeedit" value="0"/>
-                  <lable>metre^3</lable>
+                  <lable>metre^2</lable>
                 </div><br>
                 <div class="formelement">
                 [Formula is:V=(2*π*Radius)*(Height+Radius)]
