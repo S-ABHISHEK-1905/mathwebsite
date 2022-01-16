@@ -36,11 +36,157 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 
---include your code--
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Volume</title>
+    <style>
+        * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color:azure;
+}
+.container {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content {
+  display: block;
+  width: 100%;
+  background-color: aquamarine;
+  min-height: 500px;
+  margin-top: 150px;
+}
+.content2{
+    display: block;
+    width: 100%;
+    background-color: aqua;
+    min-height: 500px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+h1{
+    text-align: center;
+    padding-top: 50px;
+    color: rgb(36, 23, 23);
+}
+.formelement{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>VOLUME OF CYLINDER</h1>
+            <form>
+                <div class=formelement>
+                    <lable for="aedit">RADIUS:</lable>
+                    <input type="text" id="aedit" value="0"/>
+                    <lable>metre(s)</lable>
+                </div><br>
+                <div class=formelement>
+                    <lable for="bedit">HEIGHT:</lable>
+                    <input type="text" id="bedit" value="0"/>
+                    <lable>metre(s)</lable>
+                </div><br>
+                <div class=formelement>
+                    <input type="button" value="CALCULATE" id="calbutton"/>
+                </div><br>
+                <div class=formelement>
+                    <lable for="cedit">Volume:</lable>
+                    <input type="text" id="cedit" value="0"/>
+                    <lable>metre^3</lable>
+                </div><br>
+                <div class=formelement>
+                    [Formula is = π*Radius^2*Height]
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            var button;
+            button=document.querySelector("#calbutton");
+            button.addEventListener("click",function(){
+                var atext,btext,ctext;
+                var aval,bval,cval;
+                atext=document.querySelector("#aedit");
+                btext=document.querySelector("#bedit");
+                ctext=document.querySelector("#cedit");
+
+                aval=parseInt(atext.value);
+                bval=parseInt(btext.value);
+                cval=(22/7)*aval**2*(bval);
+                ctext.value=""+cval;
+            });
+        </script>
+        <div class="content2">
+            <h1>AREA OF CYLINDER</h1>
+            <form>
+                <div class="formelement">
+                  <lable for="radiusedit">RADIUS:</lable>
+                  <input type="text" id="radiusedit" value="0"/>
+                  <lable>metre(s)</lable>
+                </div><br>
+                <div class="formelement">
+                  <lable for="heightedit">HEIGHT:</lable>
+                  <input type="text" id="heightedit" value="0"/>
+                  <lable>metre(s)</lable>    
+                </div><br>
+                <div class="formelement">
+                  <input type="button" value="CALCULATE" id="calbutton2"/>
+                </div><br>
+                <div class="formelement">
+                  <lable for="volumeedit">VOLUME:</lable>
+                  <input type="text" id="volumeedit" value="0"/>
+                  <lable>metre^3</lable>
+                </div><br>
+                <div class="formelement">
+                [Formula is:V=(2*π*Radius)*(Height+Radius)]
+                </div><br>
+                
+            </form>
+    
+            </div>
+        </div>
+        <script type="text/javascript">
+          var button;
+          button=document.querySelector("#calbutton2");
+          button.addEventListener("click",function(){
+            
+              var radiustext,heighttext,volumetext;
+              var aval,bval,cval;
+    
+              radiustext=document.querySelector("#radiusedit");
+              heighttext=document.querySelector("#heightedit");
+              volumetext=document.querySelector("#volumeedit");
+      
+              aval=parseInt(radiustext.value);
+              bval=parseInt(heighttext.value);
+              cval=(2*(22/7)*aval)*(bval+aval);
+              volumetext.value=""+cval;
+        
+      
+            });
+      
+        </script>     
+
+    
+</body>
+</html>
+```
 
 ## OUTPUT:
 
--- include your output screenshots ---
+![out](math.png)
 
 ## Result:
 
